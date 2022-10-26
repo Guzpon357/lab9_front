@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab_9</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <h3>Crear Categoria</h3>
+        </div>
+          <div class="col-6">
+            <input id="incategory" type="text" placeholder="Ingresa el nombre del la categoria" name="name" class="form-control"/>
+          </div>
+        <div class="col-6">
+          <button id="createcategory" class="btn btn-primary">Crear</button>
+        </div>
+      </div>
+
+      <div class="table-responsive mt-5">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <th>id</th>
+            <th>Nombre</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h2>Agregar Producto</h2>
+        </div>
+        <div class="col-6">
+          <input id="innameproduct" type="text" placeholder="Nombre del Producto" name="name" class="form-control" /><br>
+          <input id="inpriceproduct" type="text" placeholder="Precio del Producto" name="price" class="form-control"/><br>
+          <input id="inimageproduct" type="text" placeholder="URL del Producto" name="url_image" class="form-control"/><br>
+          <input id="indescproduct" type="text" placeholder="Descuento del Producto" name="discount" class="form-control"/><br>
+          <input id="incategoryproduct" type="text" placeholder="Categoria del Producto" name="category" class="form-control"/><br>
+        </div>
+        <div class="col-6">
+          <button id="createproduct" class="btn btn-primary">Crear Producto</button>
+        </div>
+      </div>
+      
+      <div class="table-responsive mt-5">
+        <table class="table table-bordered table-hover">
+          <thead>
+            <th>id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Imagen</th>
+            <th>Descuento</th>
+            <th>Category</th>
+          </thead>
+          <tbody id="tbodyproducts"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./src/service.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
